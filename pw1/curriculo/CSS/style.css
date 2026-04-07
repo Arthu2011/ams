@@ -28,3 +28,8 @@
     font-size: var(--font-base);
     line-height: var(--line-base);
 }
+
+html, body{
+    height: 100%;
+    background: var(--cor-fundo);
+}
