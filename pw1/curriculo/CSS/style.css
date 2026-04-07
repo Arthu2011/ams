@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+:root{
+    /* Cores */
+    --cor-fundo: #ececec;
+    --cor-header: #004d40;
+    --cor-footer: #009688;
+    --cor-texto: #222;
+    --cor-borda: #cecece;
+    --cor-sombra: #ccc;
+    --cor-branca: #fff;
+    /* Fontes */
+    --fonte-padrao: Arial, Tahoma, Verdana;
+
+    /* Tamanhos */
+    --font-base: 18px;
+    --line-base: 28px;
+    --radius: 5px;
+
+
+}
