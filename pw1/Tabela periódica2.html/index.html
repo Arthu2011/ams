@@ -1,867 +1,780 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Tabela em Tabela</title>
+
+    <title>Tabela Periódica</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
 
-    <table class="tabela-periodica">  
-    <tr>
-
-<!-- PERÍODO 1 (Total: 1 + 16 + 1 = 18 colunas) -->
-
-        <td class="nao-metal">
-            <div class="numero"> 1 </div>
-            <div class="simbolo"> H </div>
-            <div class="nome"> Hidrogênio </div>
-        </td>
-
-        <td colspan="16"></td>
-
-        <td class="gas">
-            <div class="numero"> 2 </div>
-            <div class="simbolo"> He </div>
-            <div class="nome"> Hélio </div>
-        </td>
-
-</tr>
-        
-
- <!-- PERÍODO 2 (Total: 2 + 10 + 6 = 18 colunas) -->
-<tr>
-        <td class="metal">
-            <div class="numero"> 3 </div>
-            <div class="simbolo"> Li </div>
-            <div class="nome"> Lítio </div>
-        </td>
-           
-        <td class="metal">
-            <div class="numero"> 4 </div>
-            <div class="simbolo"> Be </div>
-            <div class="nome"> Berílio </div>
-        </td>
-        <td colspan="10"></td>
-             
-        <td class="semimetal">
-            <div class="numero"> 5 </div>
-            <div class="simbolo"> B </div>
-            <div class="nome"> Boro </div>
-        </td>
-
-        <td class="nao-metal">
-            <div class="numero"> 6 </div>
-            <div class="simbolo"> C </div>
-            <div class="nome"> Carbono </div>
-        </td>
-
-        <td class="nao-metal">
-            <div class="numero"> 7 </div>
-            <div class="simbolo"> N </div>
-            <div class="nome"> Nitrogênio </div>
-        </td>
-
-        <td class="nao-metal">
-            <div class="numero"> 8 </div>
-            <div class="simbolo"> O </div>
-            <div class="nome"> Oxigênio </div>
-        </td>
-
-        <td class="halogenios">
-            <div class="numero"> 9 </div>
-            <div class="simbolo"> F </div>
-            <div class="nome"> Flúor </div>
-        </td>
-
-        <td class="metal">
-            <div class="numero"> 10 </div>
-            <div class="simbolo"> Ne </div>
-            <div class="nome"> Neônio </div>
-        </td>
-</tr>
-
-<!-- PERÍODO 3 (Total: 2 + 10 + 6 = 18 colunas) -->
-<tr>
-        <td class="metal alcalino">
-            <div class="numero"> 11 </div>
-            <div class="simbolo"> Na </div>
-            <div class="nome"> Sódio </div>
-        </td>
-
-        <td class="metal alcalino-terroso">
-            <div class="numero"> 12 </div>
-            <div class="simbolo"> Mg </div>
-            <div class="nome"> Magnésio </div>
-        </td>
-
-        <td class="outros-metais">
-            <div class="numero"> 13 </div>
-            <div class="simbolo"> Al </div>
-            <div class="nome"> Alumínio </div>
-        </td>
-
-        <td class="semimetal">
-            <div class="numero"> 14 </div>
-            <div class="simbolo"> Si </div>
-            <div class="nome"> Silicio </div>
-        </td>
-         
-         <td class="nao-metal">
-            <div class="numero">15</div>
-            <div class="simbolo">P</div>
-            <div class="nome">Fósforo</div>
-        </td>
-
-        <td class="nao-metal">
-            <div class="numero">16</div>
-            <div class="simbolo">S</div>
-            <div class="nome">Enxofre</div>
-        </td>
-
-        <td class="halogenio">
-            <div class="numero">17</div>
-            <div class="simbolo">Cl</div>
-            <div class="nome">Cloro</div>
-        </td>
-
-        <td class="gas-nobre">
-            <div class="numero">18</div>
-            <div class="simbolo">Ar</div>
-            <div class="nome">Argônio</div>
-        </td>
-</tr>
-<!-- PERÍODO 4 (Preenche todas as 18 colunas) -->
-<tr>
-        <td class="metal-alcalino">
-            <div class="numero">19</div>
-            <div class="simbolo">K</div>
-            <div class="nome">Potássio</div>
-        </td>
-
-        <td class="metal-alcalino-terroso">
-            <div class="numero">20</div>
-            <div class="simbolo">Ca</div>
-            <div class="nome">Cálcio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">21</div>
-            <div class="simbolo">Sc</div>
-            <div class="nome">Escândio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">22</div>
-            <div class="simbolo">Ti</div>
-            <div class="nome">Titânio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">23</div>
-            <div class="simbolo">V</div>
-            <div class="nome">Vanádio</div>
-        </td>
-        
-        <td class="metal-transicao">
-            <div class="numero">24</div>
-            <div class="simbolo">Cr</div>
-            <div class="nome">Cromo</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">25</div>
-            <div class="simbolo">Mn</div>
-            <div class="nome">Manganês</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">26</div>
-            <div class="simbolo">Fe</div>
-            <div class="nome">Ferro</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">27</div>
-            <div class="simbolo">Co</div>
-            <div class="nome">Cobalto</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">28</div>
-            <div class="simbolo">Ni</div>
-            <div class="nome">Níquel</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">29</div>
-            <div class="simbolo">Cu</div>
-            <div class="nome">Cobre</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">30</div>
-            <div class="simbolo">Zn</div>
-            <div class="nome">Zinco</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">31</div>
-            <div class="simbolo">Ga</div>
-            <div class="nome">Gálio</div>
-        </td>
-           
-        <td class="semimetal">
-            <div class="numero">32</div>
-            <div class="simbolo">Ge</div>
-            <div class="nome">Germânio</div>
-        </td>
-            
-        <td class="semimetal">
-            <div class="numero">33</div>
-            <div class="simbolo">As</div>
-            <div class="nome">Arsênio</div>
-        </td>
-            
-        <td class="nao-metal">
-            <div class="numero">34</div>
-            <div class="simbolo">Se</div>
-            <div class="nome">Selênio</div>
-        </td>
-            
-        <td class="halogenio">
-            <div class="numero">35</div>
-            <div class="simbolo">Br</div>
-            <div class="nome">Bromo</div>
-        </td>
-            
-        <td class="gas-nobre">
-            <div class="numero">36</div>
-            <div class="simbolo">Kr</div>
-            <div class="nome">Criptônio</div>
-        </td>
-</tr>
-<!-- PERÍODO 5 (Preenche todas as 18 colunas) -->
-<tr>
-        <td class="metal-alcalino">
-            <div class="numero">37</div>
-            <div class="simbolo">Rb</div>
-            <div class="nome">Rubídio</div>
-        </td>
-
-        <td class="metal-alcalino-terroso">
-            <div class="numero">38</div>
-            <div class="simbolo">Sr</div>
-            <div class="nome">Estrôncio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">39</div>
-            <div class="simbolo">Y</div>
-            <div class="nome">Ítrio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">40</div>
-            <div class="simbolo">Zr</div>
-            <div class="nome">Zircônio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">41</div>
-            <div class="simbolo">Nb</div>
-            <div class="nome">Nióbio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">42</div>
-            <div class="simbolo">Mo</div>
-            <div class="nome">Molibidênio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">43</div>
-            <div class="simbolo">Tc</div>
-            <div class="nome">Tecnécio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">44</div>
-            <div class="simbolo">Ru</div>
-            <div class="nome">Rutênio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">45</div>
-            <div class="simbolo">Rh</div>
-            <div class="nome">Ródio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">46</div>
-            <div class="simbolo">Pd</div>
-            <div class="nome">Paládio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">47</div>
-            <div class="simbolo">Ag</div>
-            <div class="nome">Prata</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">48</div>
-            <div class="simbolo">Cd</div>
-            <div class="nome">Cádmio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">49</div>
-            <div class="simbolo">In</div>
-            <div class="nome">Índio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">50</div>
-            <div class="simbolo">Sn</div>
-            <div class="nome">Estanho</div>
-        </td>
-
-        <td class="semimetal">
-            <div class="numero">51</div>
-            <div class="simbolo">Sb</div>
-            <div class="nome">Antimônio</div>
-        </td>
-
-        <td class="semimetal">
-            <div class="numero">52</div>
-            <div class="simbolo">Te</div>
-            <div class="nome">Telúrio</div>
-        </td>
-
-        <td class="halogenio">
-            <div class="numero">53</div>
-            <div class="simbolo">I</div>
-            <div class="nome">Iodo</div>
-        </td>
-
-        <td class="gas-nobre">
-            <div class="numero">54</div>
-            <div class="simbolo">Xe</div>
-            <div class="nome">Xenônio</div>
-        </td>
-</tr>
-
-<!-- PERÍODO 6 (A terceira célula indica a série dos Lantanídeos) -->
-
-<tr>
-        <td class="metal-alcalino">
-            <div class="numero">57</div>
-            <div class="simbolo">Cs</div>
-            <div class="nome">Césio</div>
-        </td>
-
-        <td class="metal-alcalino-terroso">
-            <div class="numero">56</div>
-            <div class="simbolo">Ba</div>
-            <div class="nome">Bário</div>
-        </td>
-
-        <td class="lantanideo-link">
-            <div class="numero">57-71</div>
-            <div class="simbolo">La-Lu</div>
-            <div class="nome">Lantanídeos</div>
-        </td>
-        
-        <td class="metal-transicao">
-            <div class="numero">72</div>
-            <div class="simbolo">Hf</div>
-            <div class="nome">Háfnio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">73</div>
-            <div class="simbolo">Ta</div>
-            <div class="nome">Tântalo</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">74</div>
-            <div class="simbolo">W</div>
-            <div class="nome">Tungstênio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">75</div>
-            <div class="simbolo">Re</div>
-            <div class="nome">Rênio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">76</div>
-            <div class="simbolo">Os</div>
-            <div class="nome">Ósmio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">77</div>
-            <div class="simbolo">Ir</div>
-            <div class="nome">Irídio</div>
-        </td>
-        <td class="metal-transicao">
-            <div class="numero">78</div>
-            <div class="simbolo">Pt</div>
-            <div class="nome">Platina</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">79</div>
-            <div class="simbolo">Au</div>
-            <div class="nome">Ouro</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">80</div>
-            <div class="simbolo">Hg</div>
-            <div class="nome">Mercúrio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">81</div>
-            <div class="simbolo">Tl</div>
-            <div class="nome">Tálio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">82</div>
-            <div class="simbolo">Pb</div>
-            <div class="nome">Chumbo</div>
-        </td>
-        
-        <td class="outro-metal">
-            <div class="numero">83</div>
-            <div class="simbolo">Bi</div>
-            <div class="nome">Bismuto</div>
-        </td>
-</tr>
-
-<!-- PERÍODO 6 (Continuação a partir do elemento 84) -->
-
-<tr>
-        <td class="metal-alcalino">
-            <div class="numero">55</div>
-            <div class="simbolo">Cs</div>
-            <div class="nome">Césio</div>
-        </td>
-
-        <td class="metal-alcalino-terroso">
-            <div class="numero">56</div>
-            <div class="simbolo">Ba</div>
-            <div class="nome">Bário</div>
-        </td>
-
-        <td class="lantanideo-link">
-            <div class="numero">57-71</div>
-            <div class="simbolo">La-Lu</div>
-            <div class="nome">Lantanídeos</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">72</div>
-            <div class="simbolo">Hf</div>
-            <div class="nome">Háfnio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">73</div>
-            <div class="simbolo">Ta</div>
-            <div class="nome">Tântalo</div>
-        </td>
-        <td class="metal-transicao">
-            <div class="numero">74</div>
-            <div class="simbolo">W</div>
-            <div class="nome">Tungstênio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">75</div>
-            <div class="simbolo">Re</div>
-            <div class="nome">Rênio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">76</div>
-            <div class="simbolo">Os</div>
-            <div class="nome">Ósmio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">77</div>
-            <div class="simbolo">Ir</div>
-            <div class="nome">Irídio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">78</div>
-            <div class="simbolo">Pt</div>
-            <div class="nome">Platina</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">79</div>
-            <div class="simbolo">Au</div>
-            <div class="nome">Ouro</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">80</div>
-            <div class="simbolo">Hg</div>
-            <div class="nome">Mercúrio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">81</div>
-            <div class="simbolo">Tl</div>
-            <div class="nome">Tálio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">82</div>
-            <div class="simbolo">Pb</div>
-            <div class="nome">Chumbo</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">83</div>
-            <div class="simbolo">Bi</div>
-            <div class="nome">Bismuto</div>
-        </td>
-
-        <td class="semimetal">
-            <div class="numero">84</div>
-            <div class="simbolo">Po</div>
-            <div class="nome">Polônio</div>
-        </td>
-
-        <td class="halogenio">
-            <div class="numero">85</div>
-            <div class="simbolo">At</div>
-            <div class="nome">Astato</div>
-        </td>
-
-        <td class="gas-nobre">
-            <div class="numero">86</div>
-            <div class="simbolo">Rn</div>
-            <div class="nome">Radônio</div>
-        </td>
-</tr>
-
-  <!-- PERÍODO 7 (Do elemento 87 ao 118) -->
-   
-<tr>
-        <td class="metal-alcalino">
-            <div class="numero">87</div>
-            <div class="simbolo">Fr</div>
-            <div class="nome">Frâncio</div>
-        </td>
-
-        <td class="metal-alcalino-terroso">
-            <div class="numero">88</div>
-            <div class="simbolo">Ra</div>
-            <div class="nome">Rádio</div>
-        </td>
-
-        <td class="actinideo-link">
-            <div class="numero">89-103</div>
-            <div class="simbolo">Ac-Lr</div>
-            <div class="nome">Actinídeos</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">104</div>
-            <div class="simbolo">Rf</div>
-            <div class="nome">Ruthenfórdio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">105</div>
-            <div class="simbolo">Db</div>
-            <div class="nome">Dúbnio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">106</div>
-            <div class="simbolo">Sg</div>
-            <div class="nome">Seabórgio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">107</div>
-            <div class="simbolo">Bh</div>
-            <div class="nome">Bóhrio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">108</div>
-            <div class="simbolo">Hs</div>
-            <div class="nome">Hássio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">109</div>
-            <div class="simbolo">Mt</div>
-            <div class="nome">Meitnério</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">110</div>
-            <div class="simbolo">Ds</div>
-            <div class="nome">Darmstádio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">111</div>
-            <div class="simbolo">Rg</div>
-            <div class="nome">Roentgênio</div>
-        </td>
-
-        <td class="metal-transicao">
-            <div class="numero">112</div>
-            <div class="simbolo">Cn</div>
-            <div class="nome">Copernício</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">113</div>
-            <div class="simbolo">Nh</div>
-            <div class="nome">Nhônio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">114</div>
-            <div class="simbolo">Fl</div>
-            <div class="nome">Fleróvio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">115</div>
-            <div class="simbolo">Mc</div>
-            <div class="nome">Moscóvio</div>
-        </td>
-
-        <td class="outro-metal">
-            <div class="numero">116</div>
-            <div class="simbolo">Lv</div>
-            <div class="nome">Livermório</div>
-        </td>
-
-        <td class="halogenio">
-            <div class="numero">117</div>
-            <div class="simbolo">Ts</div>
-            <div class="nome">Tenesso</div>
-        </td>
-
-        <td class="gas-nobre">
-            <div class="numero">118</div>
-            <div class="simbolo">Og</div>
-            <div class="nome">Oganésson</div>
-        </td>
-</tr>        
-
-<!-- ESPAÇAMENTO VISUAL ANTES DAS SÉRIES INFERIORES -->
-  
-<tr style="height: 20px;">
-    <td colspan="18"></td>
-</tr>
-
-<!-- SÉRIE DOS LANTANÍDEOS (Linha inferior isolada) -->
-
-<tr>
-    <td colspan="2"></td>
-        <td class="lantanideo">
-            <div class="numero">57</div>
-            <div class="simbolo">La</div>
-            <div class="nome">Lantânio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">58</div>
-            <div class="simbolo">Ce</div>
-            <div class="nome">Cério</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">59</div>
-            <div class="simbolo">Pr</div>
-            <div class="nome">Praseodímio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">60</div>
-            <div class="simbolo">Nd</div>
-            <div class="nome">Neodímio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">61</div>
-            <div class="simbolo">Pm</div>
-            <div class="nome">Promécio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">62</div>
-            <div class="simbolo">Sm</div>
-            <div class="nome">Samário</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">63</div>
-            <div class="simbolo">Eu</div>
-            <div class="nome">Európio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">64</div>
-            <div class="simbolo">Gd</div>
-            <div class="nome">Gadolínio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">65</div>
-            <div class="simbolo">Tb</div>
-            <div class="nome">Térbio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">66</div>
-            <div class="simbolo">Dy</div>
-            <div class="nome">Disprósio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">67</div>
-            <div class="simbolo">Ho</div>
-            <div class="nome">Hólmio</div>
-        </td>
-        
-        <td class="lantanideo">
-            <div class="numero">68</div>
-            <div class="simbolo">Er</div>
-            <div class="nome">Érbio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">69</div>
-            <div class="simbolo">Tm</div>
-            <div class="nome">Túlio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">70</div>
-            <div class="simbolo">Yb</div>
-            <div class="nome">Itérbio</div>
-        </td>
-
-        <td class="lantanideo">
-            <div class="numero">71</div>
-            <div class="simbolo">Lu</div>
-            <div class="nome">Nutécio</div>
-        </td>
-
-    <td></td>
-</tr>
-
-<!-- SÉRIE DOS ACTINÍDEOS (Linha inferior isolada) -->
-
-<tr>
-    <td colspan="2"></td>
-        <td class="actinideo">
-            <div class="numero">89</div>
-            <div class="simbolo">Ac</div>
-            <div class="nome">Actínio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">90</div>
-            <div class="simbolo">Th</div>
-            <div class="nome">Tório</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">91</div>
-            <div class="simbolo">Pa</div>
-            <div class="nome">Protactínio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">92</div>
-            <div class="simbolo">U</div>
-            <div class="nome">Urânio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">93</div>
-            <div class="simbolo">Np</div>
-            <div class="nome">Netúnio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">94</div>
-            <div class="simbolo">Pu</div>
-            <div class="nome">Plutônio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">95</div>
-            <div class="simbolo">Am</div>
-            <div class="nome">Amerício</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">96</div>
-            <div class="simbolo">Cm</div>
-                <div class="nome">Cúrio</div>
-            </td>
-
-        <td class="actinideo">
-            <div class="numero">97</div>
-            <div class="simbolo">Bk</div>
-            <div class="nome">Berquélio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">98</div>
-            <div class="simbolo">Cf</div>
-            <div class="nome">Califórnio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">99</div>
-            <div class="simbolo">Es</div>
-            <div class="nome">Einstênio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">100</div>
-            <div class="simbolo">Fm</div>
-            <div class="nome">Férmio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">102</div>
-            <div class="simbolo">No</div>
-            <div class="nome">Nobélio</div>
-        </td>
-
-        <td class="actinideo">
-            <div class="numero">103</div>
-            <div class="simbolo">Lr</div>
-            <div class="nome">Laurêncio</div>
-        </td>
-        
-    <td></td>
-</tr>
-    </table>
+    <!-- CONTAINER -->
+
+    <div class="container">
+
+        <h1>Tabela Periódica dos Elementos</h1>
+
+        <!-- TABELA -->
+
+        <div class="tabela-periodica">
+
+            <!-- PERÍODO 1 -->
+
+            <div class="elemento nao-metal" style="--col:1; --row:1;">
+                <span class="numero">1</span>
+                <span class="simbolo">H</span>
+                <span class="nome">Hidrogênio</span>
+            </div>
+
+            <div class="elemento gas-nobre" style="--col:18; --row:1;">
+                <span class="numero">2</span>
+                <span class="simbolo">He</span>
+                <span class="nome">Hélio</span>
+            </div>
+
+
+            <!-- PERÍODO 2 -->
+
+            <div class="elemento metal-alcalino" style="--col:1; --row:2;">
+                <span class="numero">3</span>
+                <span class="simbolo">Li</span>
+                <span class="nome">Lítio</span>
+            </div>
+
+            <div class="elemento metal-alcalino-terroso" style="--col:2; --row:2;">
+                <span class="numero">4</span>
+                <span class="simbolo">Be</span>
+                <span class="nome">Berílio</span>
+            </div>
+
+            <div class="elemento semimetal" style="--col:13; --row:2;">
+                <span class="numero">5</span>
+                <span class="simbolo">B</span>
+                <span class="nome">Boro</span>
+            </div>
+
+            <div class="elemento nao-metal" style="--col:14; --row:2;">
+                <span class="numero">6</span>
+                <span class="simbolo">C</span>
+                <span class="nome">Carbono</span>
+            </div>
+
+            <div class="elemento nao-metal" style="--col:15; --row:2;">
+                <span class="numero">7</span>
+                <span class="simbolo">N</span>
+                <span class="nome">Nitrogênio</span>
+            </div>
+
+            <div class="elemento nao-metal" style="--col:16; --row:2;">
+                <span class="numero">8</span>
+                <span class="simbolo">O</span>
+                <span class="nome">Oxigênio</span>
+            </div>
+
+            <div class="elemento halogenio" style="--col:17; --row:2;">
+                <span class="numero">9</span>
+                <span class="simbolo">F</span>
+                <span class="nome">Flúor</span>
+            </div>
+
+            <div class="elemento gas-nobre" style="--col:18; --row:2;">
+                <span class="numero">10</span>
+                <span class="simbolo">Ne</span>
+                <span class="nome">Neônio</span>
+            </div>
+
+
+            <!-- PERÍODO 3 -->
+
+            <div class="elemento metal-alcalino" style="--col:1; --row:3;">
+                <span class="numero">11</span>
+                <span class="simbolo">Na</span>
+                <span class="nome">Sódio</span>
+            </div>
+
+            <div class="elemento metal-alcalino-terroso" style="--col:2; --row:3;">
+                <span class="numero">12</span>
+                <span class="simbolo">Mg</span>
+                <span class="nome">Magnésio</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:13; --row:3;">
+                <span class="numero">13</span>
+                <span class="simbolo">Al</span>
+                <span class="nome">Alumínio</span>
+            </div>
+
+            <div class="elemento semimetal" style="--col:14; --row:3;">
+                <span class="numero">14</span>
+                <span class="simbolo">Si</span>
+                <span class="nome">Silício</span>
+            </div>
+
+            <div class="elemento nao-metal" style="--col:15; --row:3;">
+                <span class="numero">15</span>
+                <span class="simbolo">P</span>
+                <span class="nome">Fósforo</span>
+            </div>
+
+            <div class="elemento nao-metal" style="--col:16; --row:3;">
+                <span class="numero">16</span>
+                <span class="simbolo">S</span>
+                <span class="nome">Enxofre</span>
+            </div>
+
+            <div class="elemento halogenio" style="--col:17; --row:3;">
+                <span class="numero">17</span>
+                <span class="simbolo">Cl</span>
+                <span class="nome">Cloro</span>
+            </div>
+
+            <div class="elemento gas-nobre" style="--col:18; --row:3;">
+                <span class="numero">18</span>
+                <span class="simbolo">Ar</span>
+                <span class="nome">Argônio</span>
+            </div>
+
+
+            <!-- PERÍODO 4 -->
+
+            <div class="elemento metal-alcalino" style="--col:1; --row:4;">
+                <span class="numero">19</span>
+                <span class="simbolo">K</span>
+                <span class="nome">Potássio</span>
+            </div>
+
+            <div class="elemento metal-alcalino-terroso" style="--col:2; --row:4;">
+                <span class="numero">20</span>
+                <span class="simbolo">Ca</span>
+                <span class="nome">Cálcio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:3; --row:4;">
+                <span class="numero">21</span>
+                <span class="simbolo">Sc</span>
+                <span class="nome">Escândio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:4; --row:4;">
+                <span class="numero">22</span>
+                <span class="simbolo">Ti</span>
+                <span class="nome">Titânio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:5; --row:4;">
+                <span class="numero">23</span>
+                <span class="simbolo">V</span>
+                <span class="nome">Vanádio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:6; --row:4;">
+                <span class="numero">24</span>
+                <span class="simbolo">Cr</span>
+                <span class="nome">Cromo</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:7; --row:4;">
+                <span class="numero">25</span>
+                <span class="simbolo">Mn</span>
+                <span class="nome">Manganês</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:8; --row:4;">
+                <span class="numero">26</span>
+                <span class="simbolo">Fe</span>
+                <span class="nome">Ferro</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:9; --row:4;">
+                <span class="numero">27</span>
+                <span class="simbolo">Co</span>
+                <span class="nome">Cobalto</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:10; --row:4;">
+                <span class="numero">28</span>
+                <span class="simbolo">Ni</span>
+                <span class="nome">Níquel</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:11; --row:4;">
+                <span class="numero">29</span>
+                <span class="simbolo">Cu</span>
+                <span class="nome">Cobre</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:12; --row:4;">
+                <span class="numero">30</span>
+                <span class="simbolo">Zn</span>
+                <span class="nome">Zinco</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:13; --row:4;">
+                <span class="numero">31</span>
+                <span class="simbolo">Ga</span>
+                <span class="nome">Gálio</span>
+            </div>
+
+            <div class="elemento semimetal" style="--col:14; --row:4;">
+                <span class="numero">32</span>
+                <span class="simbolo">Ge</span>
+                <span class="nome">Germânio</span>
+            </div>
+
+            <div class="elemento semimetal" style="--col:15; --row:4;">
+                <span class="numero">33</span>
+                <span class="simbolo">As</span>
+                <span class="nome">Arsênio</span>
+            </div>
+
+            <div class="elemento nao-metal" style="--col:16; --row:4;">
+                <span class="numero">34</span>
+                <span class="simbolo">Se</span>
+                <span class="nome">Selênio</span>
+            </div>
+
+            <div class="elemento halogenio" style="--col:17; --row:4;">
+                <span class="numero">35</span>
+                <span class="simbolo">Br</span>
+                <span class="nome">Bromo</span>
+            </div>
+
+            <div class="elemento gas-nobre" style="--col:18; --row:4;">
+                <span class="numero">36</span>
+                <span class="simbolo">Kr</span>
+                <span class="nome">Criptônio</span>
+            </div>
+
+
+            <!-- PERÍODO 5 -->
+
+            <div class="elemento metal-alcalino" style="--col:1; --row:5;">
+                <span class="numero">37</span>
+                <span class="simbolo">Rb</span>
+                <span class="nome">Rubídio</span>
+            </div>
+
+            <div class="elemento metal-alcalino-terroso" style="--col:2; --row:5;">
+                <span class="numero">38</span>
+                <span class="simbolo">Sr</span>
+                <span class="nome">Estrôncio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:3; --row:5;">
+                <span class="numero">39</span>
+                <span class="simbolo">Y</span>
+                <span class="nome">Ítrio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:4; --row:5;">
+                <span class="numero">40</span>
+                <span class="simbolo">Zr</span>
+                <span class="nome">Zircônio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:5; --row:5;">
+                <span class="numero">41</span>
+                <span class="simbolo">Nb</span>
+                <span class="nome">Nióbio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:6; --row:5;">
+                <span class="numero">42</span>
+                <span class="simbolo">Mo</span>
+                <span class="nome">Molibdênio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:7; --row:5;">
+                <span class="numero">43</span>
+                <span class="simbolo">Tc</span>
+                <span class="nome">Tecnécio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:8; --row:5;">
+                <span class="numero">44</span>
+                <span class="simbolo">Ru</span>
+                <span class="nome">Rutênio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:9; --row:5;">
+                <span class="numero">45</span>
+                <span class="simbolo">Rh</span>
+                <span class="nome">Ródio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:10; --row:5;">
+                <span class="numero">46</span>
+                <span class="simbolo">Pd</span>
+                <span class="nome">Paládio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:11; --row:5;">
+                <span class="numero">47</span>
+                <span class="simbolo">Ag</span>
+                <span class="nome">Prata</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:12; --row:5;">
+                <span class="numero">48</span>
+                <span class="simbolo">Cd</span>
+                <span class="nome">Cádmio</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:13; --row:5;">
+                <span class="numero">49</span>
+                <span class="simbolo">In</span>
+                <span class="nome">Índio</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:14; --row:5;">
+                <span class="numero">50</span>
+                <span class="simbolo">Sn</span>
+                <span class="nome">Estanho</span>
+            </div>
+
+            <div class="elemento semimetal" style="--col:15; --row:5;">
+                <span class="numero">51</span>
+                <span class="simbolo">Sb</span>
+                <span class="nome">Antimônio</span>
+            </div>
+
+            <div class="elemento semimetal" style="--col:16; --row:5;">
+                <span class="numero">52</span>
+                <span class="simbolo">Te</span>
+                <span class="nome">Telúrio</span>
+            </div>
+
+            <div class="elemento halogenio" style="--col:17; --row:5;">
+                <span class="numero">53</span>
+                <span class="simbolo">I</span>
+                <span class="nome">Iodo</span>
+            </div>
+
+            <div class="elemento gas-nobre" style="--col:18; --row:5;">
+                <span class="numero">54</span>
+                <span class="simbolo">Xe</span>
+                <span class="nome">Xenônio</span>
+            </div>
+
+
+            <!-- PERÍODO 6 -->
+
+            <div class="elemento metal-alcalino" style="--col:1; --row:6;">
+                <span class="numero">55</span>
+                <span class="simbolo">Cs</span>
+                <span class="nome">Césio</span>
+            </div>
+
+            <div class="elemento metal-alcalino-terroso" style="--col:2; --row:6;">
+                <span class="numero">56</span>
+                <span class="simbolo">Ba</span>
+                <span class="nome">Bário</span>
+            </div>
+
+            <div class="elemento marcador" style="--col:3; --row:6;">
+                <span class="numero">57–71</span>
+                <span class="simbolo">La–Lu</span>
+                <span class="nome">Lantanídeos</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:4; --row:6;">
+                <span class="numero">72</span>
+                <span class="simbolo">Hf</span>
+                <span class="nome">Háfnio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:5; --row:6;">
+                <span class="numero">73</span>
+                <span class="simbolo">Ta</span>
+                <span class="nome">Tântalo</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:6; --row:6;">
+                <span class="numero">74</span>
+                <span class="simbolo">W</span>
+                <span class="nome">Tungstênio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:7; --row:6;">
+                <span class="numero">75</span>
+                <span class="simbolo">Re</span>
+                <span class="nome">Rênio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:8; --row:6;">
+                <span class="numero">76</span>
+                <span class="simbolo">Os</span>
+                <span class="nome">Ósmio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:9; --row:6;">
+                <span class="numero">77</span>
+                <span class="simbolo">Ir</span>
+                <span class="nome">Irídio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:10; --row:6;">
+                <span class="numero">78</span>
+                <span class="simbolo">Pt</span>
+                <span class="nome">Platina</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:11; --row:6;">
+                <span class="numero">79</span>
+                <span class="simbolo">Au</span>
+                <span class="nome">Ouro</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:12; --row:6;">
+                <span class="numero">80</span>
+                <span class="simbolo">Hg</span>
+                <span class="nome">Mercúrio</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:13; --row:6;">
+                <span class="numero">81</span>
+                <span class="simbolo">Tl</span>
+                <span class="nome">Tálio</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:14; --row:6;">
+                <span class="numero">82</span>
+                <span class="simbolo">Pb</span>
+                <span class="nome">Chumbo</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:15; --row:6;">
+                <span class="numero">83</span>
+                <span class="simbolo">Bi</span>
+                <span class="nome">Bismuto</span>
+            </div>
+
+            <div class="elemento semimetal" style="--col:16; --row:6;">
+                <span class="numero">84</span>
+                <span class="simbolo">Po</span>
+                <span class="nome">Polônio</span>
+            </div>
+
+            <div class="elemento halogenio" style="--col:17; --row:6;">
+                <span class="numero">85</span>
+                <span class="simbolo">At</span>
+                <span class="nome">Astato</span>
+            </div>
+
+            <div class="elemento gas-nobre" style="--col:18; --row:6;">
+                <span class="numero">86</span>
+                <span class="simbolo">Rn</span>
+                <span class="nome">Radônio</span>
+            </div>
+
+
+            <!-- PERÍODO 7 -->
+
+            <div class="elemento metal-alcalino" style="--col:1; --row:7;">
+                <span class="numero">87</span>
+                <span class="simbolo">Fr</span>
+                <span class="nome">Frâncio</span>
+            </div>
+
+            <div class="elemento metal-alcalino-terroso" style="--col:2; --row:7;">
+                <span class="numero">88</span>
+                <span class="simbolo">Ra</span>
+                <span class="nome">Rádio</span>
+            </div>
+
+            <div class="elemento marcador" style="--col:3; --row:7;">
+                <span class="numero">89–103</span>
+                <span class="simbolo">Ac–Lr</span>
+                <span class="nome">Actinídeos</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:4; --row:7;">
+                <span class="numero">104</span>
+                <span class="simbolo">Rf</span>
+                <span class="nome">Rutherfórdio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:5; --row:7;">
+                <span class="numero">105</span>
+                <span class="simbolo">Db</span>
+                <span class="nome">Dúbnio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:6; --row:7;">
+                <span class="numero">106</span>
+                <span class="simbolo">Sg</span>
+                <span class="nome">Seabórgio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:7; --row:7;">
+                <span class="numero">107</span>
+                <span class="simbolo">Bh</span>
+                <span class="nome">Bóhrio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:8; --row:7;">
+                <span class="numero">108</span>
+                <span class="simbolo">Hs</span>
+                <span class="nome">Hássio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:9; --row:7;">
+                <span class="numero">109</span>
+                <span class="simbolo">Mt</span>
+                <span class="nome">Meitnério</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:10; --row:7;">
+                <span class="numero">110</span>
+                <span class="simbolo">Ds</span>
+                <span class="nome">Darmstádio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:11; --row:7;">
+                <span class="numero">111</span>
+                <span class="simbolo">Rg</span>
+                <span class="nome">Roentgênio</span>
+            </div>
+
+            <div class="elemento metal-transicao" style="--col:12; --row:7;">
+                <span class="numero">112</span>
+                <span class="simbolo">Cn</span>
+                <span class="nome">Copernício</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:13; --row:7;">
+                <span class="numero">113</span>
+                <span class="simbolo">Nh</span>
+                <span class="nome">Nihônio</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:14; --row:7;">
+                <span class="numero">114</span>
+                <span class="simbolo">Fl</span>
+                <span class="nome">Fleróvio</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:15; --row:7;">
+                <span class="numero">115</span>
+                <span class="simbolo">Mc</span>
+                <span class="nome">Moscóvio</span>
+            </div>
+
+            <div class="elemento outro-metal" style="--col:16; --row:7;">
+                <span class="numero">116</span>
+                <span class="simbolo">Lv</span>
+                <span class="nome">Livermório</span>
+            </div>
+
+            <div class="elemento halogenio" style="--col:17; --row:7;">
+                <span class="numero">117</span>
+                <span class="simbolo">Ts</span>
+                <span class="nome">Tenessino</span>
+            </div>
+
+            <div class="elemento gas-nobre" style="--col:18; --row:7;">
+                <span class="numero">118</span>
+                <span class="simbolo">Og</span>
+                <span class="nome">Oganessônio</span>
+            </div>
+
+
+            <!-- LANTANÍDEOS -->
+
+            <div class="elemento lantanideo" style="--col:3; --row:9;">
+                <span class="numero">57</span>
+                <span class="simbolo">La</span>
+                <span class="nome">Lantânio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:4; --row:9;">
+                <span class="numero">58</span>
+                <span class="simbolo">Ce</span>
+                <span class="nome">Cério</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:5; --row:9;">
+                <span class="numero">59</span>
+                <span class="simbolo">Pr</span>
+                <span class="nome">Praseodímio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:6; --row:9;">
+                <span class="numero">60</span>
+                <span class="simbolo">Nd</span>
+                <span class="nome">Neodímio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:7; --row:9;">
+                <span class="numero">61</span>
+                <span class="simbolo">Pm</span>
+                <span class="nome">Promécio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:8; --row:9;">
+                <span class="numero">62</span>
+                <span class="simbolo">Sm</span>
+                <span class="nome">Samário</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:9; --row:9;">
+                <span class="numero">63</span>
+                <span class="simbolo">Eu</span>
+                <span class="nome">Európio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:10; --row:9;">
+                <span class="numero">64</span>
+                <span class="simbolo">Gd</span>
+                <span class="nome">Gadolínio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:11; --row:9;">
+                <span class="numero">65</span>
+                <span class="simbolo">Tb</span>
+                <span class="nome">Térbio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:12; --row:9;">
+                <span class="numero">66</span>
+                <span class="simbolo">Dy</span>
+                <span class="nome">Disprósio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:13; --row:9;">
+                <span class="numero">67</span>
+                <span class="simbolo">Ho</span>
+                <span class="nome">Hólmio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:14; --row:9;">
+                <span class="numero">68</span>
+                <span class="simbolo">Er</span>
+                <span class="nome">Érbio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:15; --row:9;">
+                <span class="numero">69</span>
+                <span class="simbolo">Tm</span>
+                <span class="nome">Túlio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:16; --row:9;">
+                <span class="numero">70</span>
+                <span class="simbolo">Yb</span>
+                <span class="nome">Itérbio</span>
+            </div>
+
+            <div class="elemento lantanideo" style="--col:17; --row:9;">
+                <span class="numero">71</span>
+                <span class="simbolo">Lu</span>
+                <span class="nome">Lutécio</span>
+            </div>
+
+
+            <!-- ACTINÍDEOS -->
+
+            <div class="elemento actinideo" style="--col:3; --row:10;">
+                <span class="numero">89</span>
+                <span class="simbolo">Ac</span>
+                <span class="nome">Actínio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:4; --row:10;">
+                <span class="numero">90</span>
+                <span class="simbolo">Th</span>
+                <span class="nome">Tório</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:5; --row:10;">
+                <span class="numero">91</span>
+                <span class="simbolo">Pa</span>
+                <span class="nome">Protactínio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:6; --row:10;">
+                <span class="numero">92</span>
+                <span class="simbolo">U</span>
+                <span class="nome">Urânio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:7; --row:10;">
+                <span class="numero">93</span>
+                <span class="simbolo">Np</span>
+                <span class="nome">Netúnio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:8; --row:10;">
+                <span class="numero">94</span>
+                <span class="simbolo">Pu</span>
+                <span class="nome">Plutônio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:9; --row:10;">
+                <span class="numero">95</span>
+                <span class="simbolo">Am</span>
+                <span class="nome">Amerício</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:10; --row:10;">
+                <span class="numero">96</span>
+                <span class="simbolo">Cm</span>
+                <span class="nome">Cúrio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:11; --row:10;">
+                <span class="numero">97</span>
+                <span class="simbolo">Bk</span>
+                <span class="nome">Berquélio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:12; --row:10;">
+                <span class="numero">98</span>
+                <span class="simbolo">Cf</span>
+                <span class="nome">Califórnio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:13; --row:10;">
+                <span class="numero">99</span>
+                <span class="simbolo">Es</span>
+                <span class="nome">Einstênio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:14; --row:10;">
+                <span class="numero">100</span>
+                <span class="simbolo">Fm</span>
+                <span class="nome">Férmio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:15; --row:10;">
+                <span class="numero">101</span>
+                <span class="simbolo">Md</span>
+                <span class="nome">Mendelévio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:16; --row:10;">
+                <span class="numero">102</span>
+                <span class="simbolo">No</span>
+                <span class="nome">Nobélio</span>
+            </div>
+
+            <div class="elemento actinideo" style="--col:17; --row:10;">
+                <span class="numero">103</span>
+                <span class="simbolo">Lr</span>
+                <span class="nome">Laurêncio</span>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
