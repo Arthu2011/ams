@@ -3,23 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Desafio Media Query</title>
+    <title>Forno Vivo Pizzaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=bricolage+grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap" rel="styleheet">
+    <link rel="stylesheet" href="CSS/style.CSS">
 </head>
 <body>
-    <main class="card-container">
-        <div class="card-image">
-            <img src="https://images.unplash.com/photo-1555066931-4365d14ab8c?auto=format&fit=crop&w-600&g=80" alt="código na tela">
+    <header class="topo">
+        <a href="#" class="logo">Forno Vivo</a>
+        <nav class="nav">
+            <a href="#cardapio">Cardápio</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#visite">Visite</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero_texto">
+            <h1>Massa de 48 horas, forno a lenha, fome de sobra.</h1>
+            <p>Pizzas napolitanas assadas em 90segundos. peça no balcão ou chame no WhatsApp.</p>
+            <a class="botao" href="#cardapio">Ver Cardápio</a>
         </div>
-        <div class="card-content">
-            <span class="badge">Destaque</span>
-            <h1>Desenvolvimento Web Moderno</h1>
-            <p>Aprenda a criar páginas web altamente responsivas utilizando técnicas avançadas de CSS, como Flexbox e Media Query, garantindo exelente experiencia em qualquer tela</p>
-            <div class="card-actions">
-                <a href="#" class="bnt primary">Saiba mais</a>
-                <a href="#" class="bnt secondary">Documentação</a>
+        <div class="hero_pizza" aria-hidden="true"></div>
+    </section>
+    <main class="cardapio" id="cardapio">
+    <h2 class="titulo_secao">Cardápio</h2>
+    <div class="cardapio_lista">
+        <article class="item item--destaque">
+            <h3>Margherita Vivo</h3>
+            <p>molho de tomate italiano, mozzarella de búfala, manjericão fresco e azeite.</p>
+            <span class="preco">R$ 52,00</span>
+            <span class="selo">Mais pedida</span>
+        </article>
+        <article class="item">
+            <h3>Calabresa Defumada</h3>
+            <p>Calabresa artesanal, cebola roxa e azeitonas pretas.</p>
+            <span class="preco">R$ 48,00</span>
+        </article>
+        <article class="item">
+            <h3>Quatro Queijos</h3>
+            <p>Mozzarella, gorgonzola, parmesão e provolone.</p>
+            <span class="preco">R$ 56,00</span>
+        </article>
+        <article class="item">
+            <h3>Funghi</h3>
+            <p>Cogumelos salteados, mozzarella e tomilho.</p>
+            <span class="preco">R$ 54,00</span>
+        </article>
+        <article class="item">
+            <h3>Portuguesa</h3>
+            <p>Presunto, ovo, cebola, ervilha e azeitonas.</p>
+            <span class="preco">R$ 50,00</span>
+        </article>
+        <article class="item">
+            <h3>Doce de Banana</h3>
+            <p>Banana, canela, açúcar mascavo e sorvete de creme.</p>
+            <span class="preco">R$ 44,00</span>
+        </article>
         </div>
-        </div>
-    </main>
+        </main>
+        <section class="galeria" id="galeria">
+            <h2 class="titulo_secao">Galeria</h2>
+            <div class="galeria_grade">
+                <div class="foto foto--grande">Massa no ponto</div>
+                <div class="foto">Forno a lenha</div>
+                <div class="foto">Manjericão</div>
+                <div class="foto foto--larga">Salão aos sábados</div>
+                <div class="foto">Borda recheada</div>
+            </div>
+        </section>
+        <section class="visite" id="visite">
+            <h2 class="titulo_secao">Visite</h2>
+            <div class="visite_grade">
+                <div class="caixa">
+                    <h3>Horários</h3>
+                    <p>Ter a qui: 18h ás 23h</p>
+                    <p>Sex a dom: 18h à 00h</p>
+                    <p>Segunda: fechado</p>
+                </div>
+                <div class="caixa">
+                    <h3>Endereço</h3>
+                    <p>Rua das Oliveiras, 120</p>
+                    <p>Centro</p>
+                </div>
+                <div class="caixa caixa--cta">
+                    <h3>Peça agora</h3>
+                    <p>(14) 99999-0000</p>
+                    <a class="botao botao--claro" href="#">Chamar no WhatsApp</a>
+            </div>
+            </div>
+        </section>
+
+        <footer class="rodape">
+            <p>Forno Vivo Pizzaria</p>
+            <p>Projeto de exemplo para estudo de CSS Grid</p>
+        </footer>
 </body>
 </html>

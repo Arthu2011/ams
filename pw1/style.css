@@ -1,149 +1,142 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+:root {
+    --manjericao: #1f4d36;
+    --tomate: #e0422b;
+    --massa: #f3c969;
+    --branco: #fffdf7;
+    --carvao: #232323;
+    --espaco: clamp(1rem, 3vm, 2rem);
 }
+
+*,*::before, *::after { box-sizing: border-box; margin: 0; }
 
 body {
-    background-color: #f0f2f5;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 16px;
-}
-
-.card-container {
-    background-color: #ffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%;
-    max-height: 400px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease;
-}
-
-.card-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-
-.card-content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.badge {
-    background-color: #e0f2fe;
-    color: #0284c7;
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 4px 8px;
-    border-radius: 4px;
-    width: fit-content;
-    text-transform: uppercase;
-}
-
-.card-content h1 {
-    font-size: 1.25rem;
-    color: #1e293b;
-    line-height: 1.4;
-}
-
-.card-contnet p {
-    font-size: 0.9rem;
-    color: #64748b;
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    color: var(--branco);
     line-height: 1.5;
 }
 
-.card-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 8px;
+a { color: inherit; }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr min(1100px, 100% - 2 * var(--espaco)) 1fr;
+    grid-template-areas:
+       "topo    topo    topo"
+       "hero    hero    hero"
+       ".    cardapio ."
+       ".    galeria ."
+       "visite    visite    visite"
+       "rodape    rodape    rodape";
+       row-gap: clamp(3rem, 8vw, 6rem);
 }
 
-.btn {
-    text-decoration: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-align: center;
-    flex: 1;
+.topo    { grid-area: topo;}
+.hero    { grid-area: hero;}
+.cardapio    { grid-area: cardapio;}
+.galeria    { grid-area: gaelria;}
+.visite    { grid-area: visite;}
+.rodape    { grid-area: rodape;}
+
+.topo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: var(--espaco);
+    padding: 1rem var(--espaco);
+    background: var(--manjericao);
+    color: var(--branco);
 }
 
-.btn.primary{
-    background-color: #0284c7;
-    color: #ffffff;
-}
-
-.btn.primary:hover {
-    background-color: #0369a1;
-}
-
-.btn.secondary {
-    display: none;
-}
-
-@media (min-width: 600px) {
-    .card-container {
-        max-width: 650px;
-        flex-direction: row;
-    }
-
-.card-image img{
-    flex: 1;
-}
-
-.card-content {
-    flex: 1;
-    justify-content: center;
-    padding: 30px;
-}
-
-.card-content h1 {
+.logo {
+    font-weight: 800;
     font-size: 1.4rem;
+    text-decoration: none;
 }
 
-.btn.secondary {
-    display: block;
-    background-color: #e2ebf0;
-    color: #334155;
+.nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: var(--espaco);
+}
+.nav a { text-decoration: none; font-weight: 700; }
+.nav a:hover { color: var(--massa); }
+
+.hero {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    gap: var(--espaco);
+    padding: clamp(2rem, 6vm, 5rem) max(var(--espaco), calc((100% - 1100px) / 2));
+    background: var(--manjericao);
+    color: var(--branco);
+    margin-top: -6rem;
+    padding-top: calc(clamp(2rem, 6vw, 5rem) + 6rem);
 }
 
-.btn.secondary:hover {
-    background-color: #cbd5e1;
+.hero h1 {
+    font-size: clamp(2rem, 5.5vw, 4rem);
+    line-height: 1.05;
+    font-weight: 800;
+    margin-bottom: 1rem;
 }
+.hero p { max-width: 45ch; margin-bottom: 1.5rem; }
+
+.hero__pizza {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+      radial-gradient(circle at 30% 35%, var(--tomate) 0 7%, transparent 8%),
+      radial-gradient(circle at 65% 30%, var(--tomate) 0 7%, transparent 8%),
+      radial-gradient(circle at 50% 62%, var(--tomate) 0 7%, transparent 8%),
+      radial-gradient(circle at 28% 68%, #2f7a47  0 4%, transparent 5%),
+      radial-gradient(circle at 72% 66%, #2f7a47  0 4%, transparent 5%),
+      radial-gradient(circle #fff3d6 0 62%, #d9462e 63% 82%  0 7%, var(--massa) 83%);
+    box-shadow: 0 0 0 10px var(--massa);  
 }
 
-@media (win-width: 902px) {
-    .card-container {
-        max-width: 850px;
-        box-shadow: 0 10px 25px rgb(0, 0, 0, 0.15);
-    }
+.titulo.secao {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--manjericao);
+}
 
-    .card-content {
-        padding: 40px;
-    }
+.cardapio_lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--espaco);
+}
 
-    .card-content h1 {
-        font-size: 1.75rem;
-    }
+.item {
+    display: grid;
+    grid-template-rows:auto 1fr auto;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    border: 2px solid var(--carvao);
+    border-radius: 12px;
+    position: relative;
+}
 
-    .card-container p{
-        font-size: 1rem;
-    }
+.item h3 { font-size: 1.25rem; }
+.preco { font-weight: 800; color: var(--tomate); font-size: 1.25rem; }
 
-    .btn {
-        font-size: 0.95rem;
-        padding: 12px 20px;
-    }
+.item--destaque {
+    grid-column: span 2;
+    background: var(--tomate);
+    border-color: var(--tomate);
+    color: var(--branco);
+}
+
+.item--destaque .preco { color: var(--branco); font-size: 1.6rem; }
+
+.selo {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    background: var(--massa);
+    color: var(--carvao);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
 }
